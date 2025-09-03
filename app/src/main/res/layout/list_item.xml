@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/text_list_item"
+    android:padding="16dp"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:background="@color/pink_pale"
+    android:drawableLeft="@drawable/run"
+    android:drawableTint="@color/pink_strong"
+    android:textAppearance="?attr/textAppearanceBodyLarge"
+    />

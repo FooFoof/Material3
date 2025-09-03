@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/item_1"
+            android:enabled="true"
+            android:icon="@drawable/star_empty"
+            android:title="タブ１"/>
+        <item
+            android:id="@+id/item_2"
+            android:enabled="true"
+            android:icon="@drawable/transcribe_empty"
+            android:title="タブ２"/>
+
+        <item
+            android:id="@+id/item_3"
+            android:enabled="true"
+            android:icon="@drawable/heart_plus_empty"
+            android:title="タブ１"/>
+        <item
+            android:id="@+id/item_4"
+            android:enabled="true"
+            android:icon="@drawable/browse_empty"
+            android:title="タブ２"/>
+</menu>

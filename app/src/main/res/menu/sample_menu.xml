@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_1"
+        android:title="@string/menu_label_1">
+        <!-- サブメニュー -->
+        <menu>
+            <item
+                android:id="@+id/submenu_1"
+                android:enabled="true"
+                android:icon="@drawable/heart_plus_empty"
+                android:title="@string/sub_menu_1"/>
+            <item
+                android:id="@+id/submenu_2"
+                android:enabled="true"
+                android:icon="@drawable/star_fill"
+                android:title="@string/sub_menu_2"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/item_3"
+        android:enabled="true"
+        android:icon="@drawable/star_empty"
+        android:title="@string/menu_label_2"/>
+    <item
+        android:id="@+id/item_4"
+        android:enabled="true"
+        android:icon="@drawable/run"
+        android:title="@string/menu_label_3"/>
+</menu>

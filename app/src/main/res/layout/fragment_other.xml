@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_8"
+        android:text="@string/loading"
+        android:textColor="@color/guide_text"
+        android:textSize="@dimen/space_16" />
+
+    <com.google.android.material.loadingindicator.LoadingIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorColor="@color/pink_strong" />
+
+    <!-- Loading indicator with a container -->
+    <com.google.android.material.loadingindicator.LoadingIndicator
+        style="@style/Widget.Material3.LoadingIndicator.Contained"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorColor="@color/pink_strong"
+        app:containerColor="@color/pink_normal"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_snackbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16"
+        android:text="スナックバーを表示する" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_dynamic_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16"
+        android:text="ダイナミックカラーを有効にする" />
+
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ThemeOverlay.App.DatePicker" parent="@style/ThemeOverlay.Material3.MaterialCalendar">
+        <item name="shapeCornerFamily">cut</item>
+        <item name="materialCalendarHeaderLayout">@style/datePicker.headerText</item>
+        <item name="materialCalendarHeaderSelection">@style/datePicker.select</item>
+        <item name="materialCalendarHeaderToggleButton">@style/datePicker.header_toggle_button
+        </item>
+        <item name="materialCalendarYearNavigationButton">@style/datepicker.year_navigation</item>
+        <item name="materialCalendarStyle">@style/datePicker.calender</item>
+        <item name="materialCalendarMonthNavigationButton">@style/datePicker.month</item>
+    </style>
+
+    <style name="datePicker.calender" parent="Widget.MaterialComponents.MaterialCalendar">
+        <item name="dayTodayStyle">@style/datePicker.today</item>
+        <item name="rangeFillColor">@color/pink_pale</item>
+        <item name="daySelectedStyle">@style/datePicker.selected</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <!-- ヘッダーのスタイル -->
+    <style name="datePicker.headerText" parent="@style/Widget.Material3.MaterialCalendar.HeaderLayout">
+        <item name="android:background">@color/pink_normal</item>
+
+    </style>
+
+    <!-- 選択中の日付のスタイル -->
+    <style name="datePicker.select" parent="@style/Widget.Material3.MaterialCalendar.HeaderSelection">
+        <item name="android:textColor">@color/pink_strong</item>
+    </style>
+
+    <style name="datePicker.header_toggle_button" parent="Widget.Material3.MaterialCalendar.HeaderToggleButton">
+        <item name="android:tint">@color/pink_pale</item>
+
+    </style>
+
+    <style name="datepicker.year_navigation" parent="Widget.Material3.MaterialCalendar.YearNavigationButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="iconTint">@color/white</item>
+        <item name="backgroundTint">@color/pink_strong</item>
+    </style>
+
+    <style name="datePicker.today" parent="@style/Widget.Material3.MaterialCalendar.Day.Today">
+        <item name="itemTextColor">@color/pink_strong</item>
+        <item name="itemStrokeColor">@color/pink_normal</item>
+        <item name="itemStrokeWidth">2dp</item>
+    </style>
+
+    <style name="datePicker.selected" parent="@style/Widget.Material3.MaterialCalendar.Day.Selected">
+        <item name="itemFillColor">@color/pink_pale</item>
+        <item name="itemTextColor">@color/pink_strong</item>
+        <item name="itemStrokeColor">@color/pink_strong</item>
+        <item name="itemStrokeWidth">2dp</item>
+    </style>
+
+    <style name="datePicker.month" parent="@style/Widget.Material3.MaterialCalendar.MonthNavigationButton">
+        <item name="android:textColor">@color/pink_strong</item>
+        <item name="iconTint">@color/pink_strong</item>
+    </style>
+
+    <style name="Widget.App.TimePicker.Clock" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="materialClockStyle">@style/AppTheme.Widget.TimePicker.Clock</item>
+        <item name="chipStyle">@style/AppTheme.Widget.TimePicker_chipStyle</item>
+        <item name="materialButtonOutlinedStyle">@style/AppTheme.Widget.TimePicker_Clock_button</item>
+        <item name="imageButtonStyle">@style/AppTheme.Widget.TimePicker_icon</item>
+        <item name="materialTimePickerTitleStyle">@style/AppTheme.Widget.TimePicker_picker_title</item>
+        <item name="textInputStyle">@style/AppTheme.Widget.TimePicker_input</item>
+
+    </style>
+
+    <!-- 時計版のスタイル -->
+    <style name="AppTheme.Widget.TimePicker.Clock" parent="Widget.MaterialComponents.TimePicker.Clock">
+        <item name="clockFaceBackgroundColor">@color/pink_strong</item>
+        <item name="clockHandColor">@color/pink_normal</item>
+        <item name="clockNumberTextColor">@color/white</item>
+        <item name="keyboardIcon">@drawable/keyboard</item>
+        <item name="clockIcon">@drawable/heart_plus_fill</item>
+    </style>
+
+    <!-- 時間入力のスタイル -->
+    <style name="AppTheme.Widget.TimePicker_chipStyle" parent="@style/Widget.Material3.MaterialTimePicker.Display">
+        <item name="android:textColor">@color/white</item>
+        <item name="chipBackgroundColor">@color/pink_strong</item>
+
+    </style>
+
+    <!-- AM/PMボタンのスタイル-->
+    <style name="AppTheme.Widget.TimePicker_Clock_button" parent="@style/Widget.Material3.MaterialTimePicker.Button">
+        <item name="strokeColor">@color/pink_strong</item>
+        <item name="backgroundTint">@color/selector_clock</item>
+        <item name="android:textColor">@color/selector_clock_text</item>
+        <item name="rippleColor">@color/ripple_white</item>
+
+    </style>
+
+    <style name="AppTheme.Widget.TimePicker_icon" parent="@style/Widget.Material3.MaterialTimePicker.ImageButton">
+        <item name="iconTint">@color/pink_strong</item>
+        <item name="rippleColor">@color/ripple_white</item>
+    </style>
+
+    <style name="AppTheme.Widget.TimePicker_picker_title" parent="@style/TextAppearance.MaterialComponents.TimePicker.Title">
+        <item name="android:textColor">@color/pink_strong</item>
+
+    </style>
+
+    <style name="AppTheme.Widget.TimePicker_input" parent="Widget.MaterialComponents.TimePicker.Display.TextInputLayout">
+        <item name="boxStrokeColor">@color/pink_strong</item>
+    </style>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ModalBottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalBottomSheet</item>
+    </style>
+
+    <style name="ModalBottomSheet" parent="@style/Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">@color/pink_strong</item>
+        <item name="behavior_skipCollapsed">true</item>
+    </style>
+</resources>

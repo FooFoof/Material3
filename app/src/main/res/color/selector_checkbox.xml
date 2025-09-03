@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:color="@color/pink_strong" app:state_error="true" />
+    <item android:color="@color/md_theme_secondary_light" app:state_indeterminate="true" />
+    <item android:color="@color/orange" android:state_checked="true" />
+    <item android:color="@color/blue_gray" />
+</selector>

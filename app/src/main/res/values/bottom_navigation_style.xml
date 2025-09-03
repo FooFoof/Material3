@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/pink_strong</item>
+
+    </style>
+
+    <style name="BottomNavigationActiveIndicatorTransparent" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@android:color/transparent</item>
+
+    </style>
+
+    <style name="BottomNavigationActiveIndicatorSelectorExpand" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="expandedHeight">40dp</item>
+        <item name="expandedWidth">64dp</item>
+        <!-- ラベルとアイコンの表示領域以下の値を設定した場合、この設定が反映されない。 -->
+        <item name="android:width">32dp</item>
+        <item name="android:height">24dp</item>
+        <item name="expandedActiveIndicatorPaddingStart">4dp</item>
+        <item name="expandedActiveIndicatorPaddingEnd">4dp</item>
+        <item name="expandedActiveIndicatorPaddingBottom">4dp</item>
+        <item name="expandedActiveIndicatorPaddingTop">4dp</item>
+         <item name="activeIndicatorLabelPadding">4dp</item>
+    </style>
+</resources>

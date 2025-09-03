@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ExposedDropdownMenu -->
+
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_16"
+            android:text="@string/menu_exposed_dropdown" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menu"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/menu_expose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dropDownBackgroundTint="@color/pink_pale"
+                app:simpleItemSelectedColor="@color/white"
+                app:simpleItemSelectedRippleColor="@color/ripple"
+                app:simpleItemLayout="@layout/list_item"
+                android:textColor="@color/pink_strong"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ExposedDropdownMenu_Outline -->
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space_16"
+            android:text="@string/menu_exposed_dropdown" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menu_outline"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- リストポップアップウィンドウメニュー -->
+        <Button
+            android:id="@+id/list_popup_button"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space_16"
+            android:text="@string/menu_list_up_window_menu"/>
+
+        <!-- ポップアップメニュー -->
+        <Button
+            android:id="@+id/pop_up_menu_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space_16"
+            android:text="@string/menu_pop_up_menu"/>
+
+        <!-- コンテキストメニュー -->
+        <TextView
+            android:id="@+id/context_menu_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/menu_context"/>
+
+
+    </LinearLayout>
+</ScrollView>

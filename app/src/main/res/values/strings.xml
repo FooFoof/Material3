@@ -1,0 +1,209 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Materialviewsxml</string>
+    <string name="tab_component">部品コンポーネント</string>
+    <string name="tab_big_component">ベースコンポーネント</string>
+    <string name="tab_other">その他</string>
+
+    <!-- Button Activity -->
+    <string name="button_activity_title">BUTTON</string>
+    <string name="button_text">BUTTON</string>
+    <string name="elevated_button_text">ELEVATED BUTTON</string>
+    <string name="tonal_button_text">TONAL BUTTON</string>
+    <string name="outline_button_text">OUTLINE BUTTON</string>
+    <string name="text_button_text">TEXT BUTTON</string>
+    <string name="button_group_1">BUTTON 1</string>
+    <string name="button_group_2">BUTTON 2</string>
+    <string name="button_group_3">BUTTON 3</string>
+    <string name="icon_button">ICON BUTTON</string>
+    <string name="icon_button_toggle">トグルボタン</string>
+
+    <!-- Button Actions -->
+    <string name="button_push">PUSH!</string>
+    <string name="button_cancel">CANCEL</string>
+
+    <!-- Card Content -->
+    <string name="card_activity_title">CARD</string>
+    <string name="card_elevated_title">ELEVATED_CARD</string>
+    <string name="card_filled_title">FILLED_CARD</string>
+    <string name="card_outline_title">OUTLINED CARD</string>
+
+    <string name="card_title">CARD_TITLE</string>
+    <string name="card_secondary_text">CARD_SUBTITLE</string>
+    <string name="card_supporting_text">This is supporting texts</string>
+
+    <string name="card_check_title">CHECK_CARD</string>
+    <string name="card_check_text">TRY LONG CLICK AND CHECK THIS CARD!</string>
+
+    <!-- Checkbox Activity -->
+    <string name="checkbox_activity_title">CHECKBOX</string>
+    <string name="checkbox_error_text">!THIS CHECKBOX IS ERROR!</string>
+    <string name="checkbox_normal">ノーマル</string>
+    <string name="checkbox_error">error shown</string>
+    <string name="checkbox_indeterminate">indeterminate</string>
+    <string name="checkbox_text_color">テキストカラー</string>
+    <string name="checkbox_button_icon_tint">button icon tint</string>
+    <string name="checkbox_button_tint">button tint</string>
+    <string name="checkbox_centerIfNoTextEnabled_true">テキスト無しの場合、チェクボックスを中央寄せにする</string>
+    <string name="checkbox_centerIfNoTextEnabled_false">テキスト無しの場合、チェクボックスを左寄せにする</string>
+    <string name="checkbox_color_selector">color selector</string>
+    <string name="checkbox_button_icon">button icon</string>
+    <string name="checkbox_button_compat">button compat</string>
+    <string name="checkbox_no_ripple">リップルなし</string>
+
+    <!-- Switch Actiivty -->
+    <string name="switch_activity_title">SWITCH</string>
+    <string name="label_1">通常</string>
+    <string name="label_2">ハンドルカスタマイズ</string>
+    <string name="label_3">ハンドルにアイコン</string>
+    <string name="label_4">背景カラー</string>
+    <string name="label_5">背景</string>
+    <string name="label_6">枠線</string>
+    <string name="label_7">テキストとのマージン</string>
+    <string name="label_8">disable</string>
+
+    <!-- Toolbar Activity -->
+    <string name="toolbar_activity_title">TOOLBAR</string>
+    <string name="overflow_text_1">コンテンツ1</string>
+    <string name="overflow_text_2">コンテンツ2</string>
+    <string name="overflow_text_3">コンテンツ3</string>
+    <string name="overflow_text_4">コンテンツ4</string>
+    <string name="overflow_text_5">コンテンツ5</string>
+    <string name="overflow_text_6">コンテンツ6</string>
+    <string name="overflow_text_7">コンテンツ7</string>
+
+    <!-- Bottom Sheet Activity -->
+    <string name="bottom_sheet_activity_title">BOTTOM SHEET</string>
+    <string name="button_standard_bottom_sheet">Standard Bottom Sheetを表示</string>
+    <string name="button_modal_bottom_sheet">Modal Bottom Sheetを表示</string>
+
+    <!-- Fragment One -->
+    <string name="tab_number_add_button">タブの数字を増やす</string>
+    <string name="tab_number_decrease_button">タブの数字を減らす</string>
+
+    <!-- snackbar -->
+    <string name="snackbar_text">スナックバー</string>
+    <string name="snackbar_action">閉じる</string>
+    <string name="snackbar_closed_message">snack barを閉じました</string>
+    <string name="snackbar_error_message">Android12未満ではダイナミックカラーを有効にできません。</string>
+    <string name="snackbar_success_message">ダイナミックカラーが有効になりました。他の画面に遷移してください。</string>
+
+    <!-- test field -->
+    <string name="text_field_activity_title">TEXT FIELD</string>
+    <string name="text_field_outline">OUTLINE</string>
+    <string name="text_field_filled">FILLED</string>
+    <string name="text_field_error">ERROR</string>
+    <string name="helper_text">ヘルパーテキスト</string>
+    <string name="suffix">suffix</string>
+    <string name="prefix">preffix</string>
+    <string name="text_field_icon">ICONS</string>
+    <string name="text_field_drop_down">DROP DOWN</string>
+    <string name="text_field_hint">HINT</string>
+    <string name="text_field_hint_text">ヒント</string>
+    <string name="text_field_dense">DENSE</string>
+
+    <!-- Bottom Navigation -->
+    <string name="bottom_navigation_activity_title">BOTTOM NAVIGATION</string>
+    <string name="bottom_navigation_badge">バッジを表示する</string>
+    <string name="bottom_navigation_icon_left_comment">アイコンをラベルの左に配置する</string>
+    <string name="bottom_navigation_label_selected_comment">選択中アイコンのみラベルを表示する</string>
+    <string name="bottom_navigation_label_always_comment">ラベルを常に表示する</string>
+    <string name="bottom_navigation_label_never_comment">ラベルを常に非表示にする</string>
+    <string name="bottom_navigation_background_ripple_comment">ナビゲーションの背景カラーとインディケーターのリップルカラーを指定する</string>
+    <string name="bottom_navigation_icon_color_size_comment">アイコンの色とサイズを指定する</string>
+    <string name="bottom_navigation_label_color_comment">ラベルの色を指定する</string>
+    <string name="bottom_navigation_label_text_style_comment">ラベルのテキストスタイルを指定する</string>
+    <string name="bottom_navigation_active_indicator_color_comment">アクティブインディケーターの色を指定する</string>
+    <string name="bottom_navigation_active_indicator_invisible_comment">アクティブインディケーターを見えないようにする</string>
+    <string name="bottom_navigation_active_indicator_size_comment">アクティブインディケーターのサイズ指定</string>
+    <string name="bottom_navigation_active_indicator_size_change_comment">選択時、アクティブインディケーターのサイズを変化させる</string>
+
+    <!-- SliderActivity -->
+    <string name="slider_activity_title">SLIDER</string>
+
+    <array name="slider_values">
+        <item>10.0</item>
+        <item>60.0</item>
+    </array>
+
+    <!--CarouselActivity -->
+    <string name="carousel_activity_title">CAROUSEL</string>
+    <string name="carousel_multi">Multi-browse</string>
+    <string name="carousel_uncontained">Uncontained</string>
+    <string name="carousel_hero">Hero</string>
+    <string name="carousel_hero_center">Hero_Center</string>
+    <string name="carousel_min_size_12">小アイテムの最小サイズ=12</string>
+    <string name="carousel_min_size_36">小アイテムの最小サイズ=36</string>
+    <string name="carousel_max_size_12">小アイテムの最大サイズ=12</string>
+    <string name="carousel_max_size_36">小アイテムの最大サイズ=36</string>
+    <string name="carousel_full">Full</string>
+
+    <!-- Chips Activity -->
+    <string name="chips_activity_title">CHIPS</string>
+    <string name="chip_section_area">タッチエリアを広げる。</string>
+    <string name="chip_label">チップ</string>
+    <string name="chip_section_scroll">横スクロール</string>
+    <string name="chip_section_single_select">1つのみ選択・選択必須</string>
+    <string name="chip_section_input">入力チップ</string>
+    <string name="chip_section_suggestion">suggestionチップ</string>
+    <string name="chip_section_make_chip">チップを動的に生成</string>
+    <string name="chip_button_make_chip">MAKE A CHIP</string>
+
+    <!-- Search Activity -->
+    <string name="search_activity_title">SEARCH</string>
+    <string name="search_bar_hint">テキストを入力してください</string>
+
+    <!-- SideSheetActivity -->
+    <string name="button_side_sheet">サイドシートを表示する</string>
+    <string name="button_modal_side_sheet">モーダルサイドシートを表示する</string>
+    <string name="side_sheet_text">サイドシート</string>
+    <string name="modal_side_sheet_text">モーダルサイドシート</string>
+
+    <!-- RadioButtonActivity -->
+    <string name="radio_button_activity_title">RADIO BUTTON</string>
+    <string name="radiobutton_text">ラジオボタン</string>
+    <string name="radiobutton_text_disable">非活性</string>
+    <string name="radiobutton_text_color_set">カラー指定</string>
+
+    <!-- MenuActivity -->
+    <string name="menu_activity_title">MENU</string>
+    <string name="menu_exposed_dropdown">ドロップダウンメニュー</string>
+    <string name="menu_exposed_dropdown_outline">ドロップダウンメニュー(outline)</string>
+    <string name="menu_list_up_window_menu">リストアップウィンドウメニューを表示する</string>
+    <string name="menu_pop_up_menu">ポップアップメニューを表示する</string>
+    <string name="menu_pop_up_menu_close">ポップアップメニューを閉じました</string>
+    <string name="menu_context">コンテキストメニューを表示する</string>
+    <string name="menu_label_1">ラベル1</string>
+    <string name="sub_menu_1">サブメニュー1</string>
+    <string name="sub_menu_2">サブメニュー2</string>
+    <string name="menu_label_2">タイトル3</string>
+    <string name="menu_label_3">タイトル4\nタイトル4</string>
+    <string name="menu_add_item">追加アイテム</string>
+
+    <array name="dropdown">
+        <item
+            android:id="@+id/item_3"
+            android:enabled="true"
+            android:icon="@drawable/star_empty"
+            android:title="@string/menu_label_2"/>
+        <item
+            android:id="@+id/item_4"
+            android:enabled="true"
+            android:icon="@drawable/run"
+            android:title="@string/menu_label_3"/>
+    </array>
+
+    <!-- DatePickerActivity -->
+    <string name="date_picker_activity_title">PICKER</string>
+    <string name="date_picker_single">DatePicler/単独選択</string>
+    <string name="date_picker_some">DatePicker/日付複数選択</string>
+    <string name="date_picker_input">DatePicker/テキスト入力</string>
+    <string name="date_picker_limit_range">DatePicker/表示範囲を指定</string>
+    <string name="date_picker_selected">DatePicker/初期表示時に表示する月を指定する</string>
+    <string name="date_picker_week">DatePicker/一番左の曜日を指定する</string>
+    <string name="date_picker_custom_theme">DatePicker/テーマをカスタムする</string>
+    <string name="time_picker_clock">TimePicker/時計モードで起動</string>
+    <string name="time_picker_input">TimePicker/入力モードで起動</string>
+    <string name="time_picker_custom_theme">TimePicker/テーマをカスタムする</string>
+
+    <string name="loading">ローディング</string>
+</resources>

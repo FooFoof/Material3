@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/checkbox_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/checkbox_title"
+        style="@style/text_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_16"
+        android:text="@string/checkbox_activity_title"
+        android:textColor="@color/guide_text"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/checkbox_child_1"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_normal"
+        android:textColor="@color/guide_text"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_title" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_error"
+        android:textColor="@color/guide_text"
+        app:errorShown="true"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_child_1" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_indeterminate"
+        android:textColor="@color/guide_text"
+        app:checkedState="indeterminate"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_child_2" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox_child_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_text_color"
+        android:textColor="@color/pink_strong"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_child_3" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_button_icon_tint"
+        android:textColor="@color/guide_text"
+        app:buttonIconTint="@color/pink_strong"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_child_4" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_button_tint"
+        android:textColor="@color/guide_text"
+        app:buttonTint="@color/pink_strong"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_child_5" />
+
+    <TextView
+        android:id="@+id/centerIfNoTextEnabled_false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_centerIfNoTextEnabled_false"
+        android:textColor="@color/guide_text"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/checkbox_child_7"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_child_6" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:centerIfNoTextEnabled="false"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/centerIfNoTextEnabled_false" />
+
+    <TextView
+        android:id="@+id/centerIfNoTextEnabled_true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_16"
+        android:text="@string/checkbox_centerIfNoTextEnabled_true"
+        android:textColor="@color/guide_text"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/checkbox_child_8"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_child_7" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_8"
+        style="@style/Widget.Material3.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:centerIfNoTextEnabled="true"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/centerIfNoTextEnabled_true" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_color_selector"
+        android:textColor="@color/guide_text"
+        app:buttonTint="@color/selector_checkbox"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_child_8" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_button_icon"
+        android:textColor="@color/guide_text"
+        app:buttonIcon="@drawable/star_fill"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_child_9" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/selector_checkbox"
+        android:text="@string/checkbox_button_compat"
+        android:textColor="@color/guide_text"
+        app:buttonIcon="@drawable/star_fill"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_child_10" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/checkbox_no_ripple"
+        android:textColor="@color/guide_text"
+        app:layout_constraintLeft_toRightOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_child_11" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toRightOf="@+id/guide"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_child_12">
+
+            <CheckBox
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:textColor="@color/guide_text"
+                android:minHeight="0dp"
+                android:minWidth="0dp" />
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/guide_text"
+                android:text="チェックボックス"/>
+        </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

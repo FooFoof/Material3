@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/carousel_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_16"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carousel_activity_title" />
+
+
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_8"
+            android:text="@string/carousel_multi"
+            tools:ignore="SpUsage" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_multi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousel_height"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_8"
+            android:text="@string/carousel_uncontained"
+            tools:ignore="SpUsage" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_uncontained"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousel_height"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_8"
+            android:text="@string/carousel_hero"
+            tools:ignore="SpUsage" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_hero"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousel_height"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_8"
+            android:text="@string/carousel_hero_center"
+            tools:ignore="SpUsage" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_hero_center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousel_height"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerThickness="2dp"
+            app:dividerColor="@color/dark_brown"
+            app:dividerInsetStart="@dimen/space_16"
+            app:dividerInsetEnd="@dimen/space_16" />
+
+
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_8"
+            android:text="@string/carousel_min_size_12"
+            tools:ignore="SmallSizeMin" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_small_size_min"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousel_height"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_8"
+            android:text="@string/carousel_min_size_36"
+            tools:ignore="SmallSizeMin" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_small_size_min_36"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousel_height"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_8"
+            android:text="@string/carousel_max_size_12"
+            tools:ignore="SmallSizeMin" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_small_size_max_24"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousel_height"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_8"
+            android:text="@string/carousel_max_size_36"
+            tools:ignore="SmallSizeMin" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_small_size_max_36"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousel_height"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_8"
+            android:text="@string/carousel_full" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_full"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+    </LinearLayout>
+</ScrollView>

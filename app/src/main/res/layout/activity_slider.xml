@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_16"
+                android:text="@string/slider_activity_title"
+                android:textColor="@color/guide_text" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0" />
+
+            <!-- ステップサイズの設定例 -->
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="5.0"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/slider3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="0.0"
+                android:valueTo="100.0" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:centered="true" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:trackHeight="24dp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:trackColor="@color/pink_strong" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:trackCornerSize="4dp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:trackInsideCornerSize="16dp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:trackStopIndicatorSize="20dp" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/slider10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:trackHeight="24dp"
+                app:trackIconActiveColor="@color/white"
+                app:trackIconActiveEnd="@drawable/star_fill"
+                app:trackIconActiveStart="@drawable/run"
+                app:trackIconSize="20dp"
+                app:values="@array/slider_values" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:thumbColor="@color/pink_strong"
+                app:thumbHeight="12dp"
+                app:thumbWidth="12dp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:haloColor="@color/pink_strong"
+                app:thumbElevation="12dp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:thumbColor="@color/white"
+                app:thumbStrokeColor="@color/blue_gray"
+                app:thumbStrokeWidth="2dp"
+                app:thumbTrackGapSize="16dp"
+                app:thumbWidth="12dp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:labelBehavior="floating"
+                app:labelStyle="@style/slider_label" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="テスト" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:labelBehavior="gone"
+                app:labelStyle="@style/slider_label" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="5.0"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:tickColor="@color/white"
+                app:tickRadiusActive="8dp"
+                app:tickRadiusInactive="4dp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="5.0"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:tickColor="@color/white"
+                app:tickVisibilityMode="autoHide" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1.0"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:tickColor="@color/white"
+                app:tickVisibilityMode="autoLimit" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="5.0"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                app:tickColor="@color/white"
+                app:tickVisibilityMode="hidden" />
+
+
+            <!-- 縦 -->
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider_2"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:orientation="vertical"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="30.0" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider_12"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:orientation="vertical"
+                android:stepSize="5.0"
+                android:value="20.0"
+                android:valueFrom="0.0"
+                android:valueTo="30.0"
+                app:trackHeight="24dp" />
+        </LinearLayout>
+    </ScrollView>

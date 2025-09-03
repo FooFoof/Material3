@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/radio_button_container"
+    android:paddingStart="@dimen/space_16"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/text_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_16"
+        android:text="@string/radio_button_activity_title"
+        android:textColor="@color/guide_text" />
+
+    <RadioGroup
+        android:checkedButton="@+id/enabled_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/enabled_selected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/guide_text"
+            android:enabled="true"
+            android:text="@string/radiobutton_text"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/guide_text"
+            android:checked="false"
+            android:enabled="false"
+            android:text="@string/radiobutton_text_disable"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/guide_text"
+            app:useMaterialThemeColors="false"
+            app:buttonTint="@color/pink_strong"
+            android:checked="false"
+            android:enabled="true"
+            android:text="@string/radiobutton_text_color_set"/>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/space_16"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/text_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_activity_title" />
+
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/search_bar_action_bar"
+        app:forceDefaultNavigationOnClickListener="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/text_section_title_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="サーチviewを表示する"
+        android:textAlignment="viewEnd" />
+
+
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.search.SearchView
+        android:id="@+id/search_view"
+        android:windowSoftInputMode="adjustNothing"
+        android:hint="@string/search_bar_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/text_section_title_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="メニューを表示する"
+        android:textAlignment="viewEnd" />
+
+
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/search_bar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</ScrollView>

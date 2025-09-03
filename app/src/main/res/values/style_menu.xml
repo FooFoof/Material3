@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="theme_pop" parent="@android:style/Widget.PopupMenu">
+        <item name="android:textColor">@color/pink_strong</item>
+        <item name="android:colorBackground">@color/pink_pale</item>
+    </style>
+</resources>

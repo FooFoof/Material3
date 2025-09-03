@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/date_picker_actions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/text_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/guide_text"
+        android:layout_margin="@dimen/space_16"
+        android:text="@string/date_picker_activity_title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_date_single_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_picker_single" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_date_some_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_picker_some" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_date_text_input_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_picker_input" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_date_picker_decorator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_picker_limit_range" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_date_picker_default_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_picker_selected" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_date_picker_first_day_of_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_picker_week" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_date_picker_custom_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_picker_custom_theme" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_picker_clock" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_time_picker_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_picker_input" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_time_picker_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_picker_custom_theme" />
+
+</LinearLayout>

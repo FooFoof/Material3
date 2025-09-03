@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="material_elevated_button" parent="Widget.Material3.Button.ElevatedButton">
+        <item name="iconTint">@color/pink_strong</item>
+        <item name="iconSize">24dp</item>
+    </style>
+
+    <style name="material_outline_button" parent="@style/Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/pink_strong</item>
+        <item name="android:textColor">@color/pink_strong</item>
+
+    </style>
+
+    <!-- Floating Action Button Styles -->
+    <style name="Widget.App.FloatingActionButton" parent="Widget.Material3.FloatingActionButton.Medium">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+    </style>
+
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="">
+        <item name="colorContainer">@color/pink_strong</item>
+        <item name="colorOnContainer">@color/white</item>
+    </style>
+</resources>

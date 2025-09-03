@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/button_container"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/text_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_16"
+        android:text="@string/button_activity_title"
+        android:textColor="@color/guide_text" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_16"
+            android:layout_gravity="center_vertical"
+            android:text="@string/button_text" />
+
+        <Button
+            android:id="@+id/elevatedButton"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space_16"
+            android:layout_marginLeft="@dimen/space_16"
+            android:text="@string/elevated_button_text" />
+
+        <Button
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space_16"
+            android:layout_marginLeft="@dimen/space_16"
+            android:text="@string/tonal_button_text"
+            app:icon="@drawable/key" />
+
+        <Button
+            style="@style/material_outline_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space_16"
+            android:layout_marginLeft="@dimen/space_16"
+            android:text="@string/outline_button_text"
+            app:icon="@drawable/key" />
+
+        <Button
+            android:id="@+id/text_button"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_16"
+            android:text="@string/text_button_text"
+            app:icon="@drawable/key" />
+
+
+        <com.google.android.material.button.MaterialButtonGroup
+            android:id="@+id/buttonGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_16"
+            android:background="?attr/colorPrimaryContainer">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_group_1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_group_2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_group_3" />
+        </com.google.android.material.button.MaterialButtonGroup>
+
+        <com.google.android.material.button.MaterialButtonGroup
+            android:id="@+id/buttonGroup_connect"
+            style="@style/Widget.Material3.MaterialButtonGroup.Connected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_16"
+            android:orientation="horizontal"
+            android:background="?attr/colorPrimaryContainer">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_group_1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_group_2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_group_3" />
+
+        </com.google.android.material.button.MaterialButtonGroup>
+
+        <com.google.android.material.button.MaterialSplitButton
+            android:id="@+id/splitbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                style="?attr/materialSplitButtonLeadingFilledStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APPROVE"
+                app:icon="@drawable/key"
+                />
+            <!-- TODO 押下時にメニューを表示するように実装する -->
+            <Button
+                style="?attr/materialSplitButtonLeadingFilledStyle"
+                android:id="@+id/expand_more_or_less_filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.button.MaterialSplitButton>
+
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space_16"
+            android:text="@string/icon_button" />
+
+        <com.google.android.material.button.MaterialButton
+            style="?attr/materialIconButtonFilledStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/heart_plus_fill"/>
+
+        <TextView
+            style="@style/text_section_title_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space_16"
+            android:text="@string/icon_button_toggle" />
+
+        <!-- チェック可能にする。 -->
+        <com.google.android.material.button.MaterialButton
+            style="?attr/materialIconButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            app:icon="@drawable/heart_plus_fill"/>
+
+        <!-- チェック状態でアイコンを切り替える -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toggleIconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Button.IconButton"
+            app:icon="@drawable/selector_icon_button"
+            app:iconTint="?attr/colorAccent"
+            app:backgroundTint="@android:color/transparent"
+            android:checkable="true"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
