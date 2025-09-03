@@ -35,16 +35,16 @@ class MainActivity : AppCompatActivity() {
 
         private fun createTabTitle(position: Int): String {
             return when (position) {
+                PAGE_BASE_COMPONENT -> getString(R.string.tab_base_component)
                 PAGE_COMPONENT -> getString(R.string.tab_component)
-                PAGE_BIG_COMPONENT -> getString(R.string.tab_big_component)
                 PAGE_OTHER -> getString(R.string.tab_other)
                 else -> getString(R.string.tab_component)
             }
         }
 
     companion object {
-        const val PAGE_COMPONENT = 0
-        const val PAGE_BIG_COMPONENT = 1
+        const val PAGE_BASE_COMPONENT = 0
+        const val PAGE_COMPONENT = 1
         const val PAGE_OTHER = 2
     }
 }

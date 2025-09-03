@@ -1,7 +1,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <string name="app_name">Materialviewsxml</string>
     <string name="tab_component">部品コンポーネント</string>
-    <string name="tab_big_component">ベースコンポーネント</string>
+    <string name="tab_base_component">ベースコンポーネント</string>
     <string name="tab_other">その他</string>
 
     <!-- Button Activity -->
@@ -75,10 +75,6 @@
     <string name="bottom_sheet_activity_title">BOTTOM SHEET</string>
     <string name="button_standard_bottom_sheet">Standard Bottom Sheetを表示</string>
     <string name="button_modal_bottom_sheet">Modal Bottom Sheetを表示</string>
-
-    <!-- Fragment One -->
-    <string name="tab_number_add_button">タブの数字を増やす</string>
-    <string name="tab_number_decrease_button">タブの数字を減らす</string>
 
     <!-- snackbar -->
     <string name="snackbar_text">スナックバー</string>

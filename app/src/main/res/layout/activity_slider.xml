@@ -156,10 +156,6 @@
                 app:labelBehavior="floating"
                 app:labelStyle="@style/slider_label" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="テスト" />
 
             <com.google.android.material.slider.Slider
                 android:id="@+id/slider15"

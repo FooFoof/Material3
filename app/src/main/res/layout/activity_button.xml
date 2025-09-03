@@ -136,7 +136,6 @@
                 android:text="APPROVE"
                 app:icon="@drawable/key"
                 />
-            <!-- TODO 押下時にメニューを表示するように実装する -->
             <Button
                 style="?attr/materialSplitButtonLeadingFilledStyle"
                 android:id="@+id/expand_more_or_less_filled"

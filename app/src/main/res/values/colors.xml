@@ -286,6 +286,7 @@
     <color name="md_theme_surfaceContainerHigh_highContrast_dark">#373C3F</color>
     <color name="md_theme_surfaceContainerHighest_highContrast_dark">#42484A</color>
 
+    <!-- カスタムカラー -->
     <color name="pink_strong">#f53193</color>
     <color name="pink_pale">#fce6ee</color>
     <color name="pink_normal">#f3ADCB</color>
