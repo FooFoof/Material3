@@ -36,12 +36,16 @@ Material3は公式ドキュメントが整備されていますが、以下の�
 ### トップページ
 - **1ページ目**: 大きいコンポーネント一覧  
 - **2ページ目**: 小さいコンポーネント一覧  
-- **3ページ目**: ローディング、ダイナミックカラー、スナックバーの表示  
+- **3ページ目**: ローディング、ダイナミックカラー、スナックバーの表示
+
+|大きいコンポーネント一覧|小さいコンポーネント一覧|その他|
+|:-:|:-:|:-:|
+|<img src="https://github.com/user-attachments/assets/6cffef09-391c-47b4-9864-aee4ac05517b" eidth="320" />|<img src="https://github.com/user-attachments/assets/5dbb6a17-64d6-4de5-b9eb-0509ced6abd8" eidth="320" />|<img src="https://github.com/user-attachments/assets/6e6f340a-c137-4ca4-8ef7-c9d32c96a4cc" eidth="320" />|
 
 ### 各コンポーネントページ
 - トップページから遷移可能  
 - コンポーネントをカスタマイズした例を配置  
-
+<img src="https://github.com/user-attachments/assets/351e84fc-9adb-4fb3-a9a3-d94aa806c96f" width="320" />
 ---
 
 ## インストール方法
@@ -54,9 +58,9 @@ Material3は公式ドキュメントが整備されていますが、以下の�
 
 ###  参考資料
 
-[Material Design 3 (公式)](https://m3.material.io/components)
-[Material Components for Android (GitHub)](material)
-[Google Fonts Icons](https://fonts.google.com/icons)
+- [Material Design 3 (公式)](https://m3.material.io/components)
+- [Material Components for Android (GitHub)](material)
+- [Google Fonts Icons](https://fonts.google.com/icons)
  ※アプリ内で使用
 
 ### ライセンス
