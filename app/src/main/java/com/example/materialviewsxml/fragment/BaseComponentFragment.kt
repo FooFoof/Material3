@@ -12,6 +12,7 @@ import com.example.materialviewsxml.BottomSheetActivity
 import com.example.materialviewsxml.NavigationRailActivity
 import com.example.materialviewsxml.R
 import com.example.materialviewsxml.SideSheetActivity
+import com.example.materialviewsxml.TopAppBarActivity
 
 class BaseComponentFragment : Fragment() {
 
@@ -37,6 +38,9 @@ class BaseComponentFragment : Fragment() {
         }
         view.findViewById<Button>(R.id.button_navigation_rail).setOnClickListener {
             startActivity(NavigationRailActivity.intent(requireContext()))
+        }
+        view.findViewById<Button>(R.id.button_top_app_bar).setOnClickListener {
+            startActivity(TopAppBarActivity.intent(requireContext()))
         }
     }
 }

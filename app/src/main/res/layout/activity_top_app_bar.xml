@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_app_bar_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/text_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_16"
+        android:text="@string/top_app_bar_activity_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_8"
+        android:text="@string/top_app_bar_small"
+        android:textColor="@color/guide_text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink_normal"
+        android:minHeight="?attr/actionBarSize"
+        app:menu="@menu/sample_menu"
+        app:navigationIcon="@drawable/menu"
+        app:navigationIconTint="@color/pink_strong"
+        app:subtitle="SUB TITLE"
+        app:subtitleCentered="true"
+        app:subtitleTextColor="@color/pink_strong"
+        app:title="SMALL APP BAR"
+        app:titleCentered="true"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_8"
+        android:text="@string/top_app_bar_medium"
+        android:textColor="@color/guide_text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:liftOnScrollTargetViewId="@id/recycler">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                style="?attr/collapsingToolbarLayoutMediumStyle"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/collapsingToolbarLayoutMediumSize"
+                android:background="@color/pink_strong"
+                app:collapsedSubtitleTextColor="@color/pink_strong"
+                app:collapsedTitleGravityMode="availableSpace"
+                app:collapsedTitleTextAppearance="@style/text_collapsed"
+                app:collapsedTitleTextColor="@color/pink_strong"
+                app:contentScrim="@color/pink_pale"
+                app:expandedSubtitleTextColor="@color/white"
+                app:expandedTitleGravity="bottom|center_horizontal"
+                app:expandedTitleTextAppearance="@style/text_extended"
+                app:expandedTitleTextColor="@color/white"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                app:toolbarId="@id/toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_collapseMode="pin">
+
+                    <com.google.android.material.appbar.MaterialToolbar
+                        android:id="@+id/toolbar"
+                        style="@style/Widget.Material3Expressive.CollapsingToolbar.Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_weight="1"
+                        android:elevation="0dp"
+                        app:layout_collapseMode="pin"
+                        app:logo="@drawable/star_empty"
+                        app:menu="@menu/sample_menu"
+                        app:navigationIcon="@drawable/menu"
+                        app:navigationIconTint="@color/white"
+                        app:subtitle="Medium Subtitle"
+                        app:title="Medium Title"
+                        app:titleCentered="true" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/action_button"
+                        style="?attr/materialIconButtonFilledStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="@color/pink_normal"
+                        app:icon="@drawable/heart_plus_fill"
+                        app:iconTint="@color/pink_strong" />
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <!-- Scrollable content -->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_8"
+        android:text="@string/top_app_bar_search"
+        android:textColor="@color/guide_text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        app:layout_collapseMode="pin">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_search"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="0dp"
+            app:layout_collapseMode="pin"
+            app:menu="@menu/sample_menu"
+            app:navigationIcon="@drawable/menu"
+            app:navigationIconTint="@color/guide_text" />
+
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/search_bar_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="52dp"
+            app:forceDefaultNavigationOnClickListener="true" />
+
+
+    </FrameLayout>
+
+    <com.google.android.material.search.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_bar_hint"
+        android:windowSoftInputMode="adjustNothing" />
+
+</LinearLayout>

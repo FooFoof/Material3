@@ -202,4 +202,11 @@
     <string name="time_picker_custom_theme">TimePicker/テーマをカスタムする</string>
 
     <string name="loading">ローディング</string>
+    
+    <!-- TopAppBarActivity -->
+    <string name="top_app_bar_activity_title">TOP APP BAR</string>
+    <string name="top_app_bar_small">SMALL</string>
+    <string name="top_app_bar_medium">MEDIUM(折りたたみ)</string>
+    <string name="top_app_bar_search">SEARCH</string>
+
 </resources>
