@@ -209,4 +209,41 @@
     <string name="top_app_bar_medium">MEDIUM(折りたたみ)</string>
     <string name="top_app_bar_search">SEARCH</string>
 
+    <!-- ProgressIndicatorActivity -->
+    <string name="progress_indicator_activity_titile">PROGRESS INDICATOR</string>
+    <string name="progress_indicator_wavy">波状プログレスバー</string>
+    <string name="progress_indicator_wavy_bold">波状プログレスバー(bold)</string>
+    <string name="progress_indicator_wavy_circle">波状プログレスバー(円形)</string>
+    <string name="progress_indicator_wavy_circle_bold">波状プログレスバー(円形・bold)</string>
+    <string name="progress_indicator_flat">フラットプログレスバー</string>
+    <string name="progress_indicator_flat_circle">フラットプログレスバー(円形)</string>
+    <string name="progress_indicator_color">カラーカスタム</string>
+    <string name="progress_indicator_color_multi">カラーカスタム(複数)</string>
+    <string name="progress_indicator_color_animation_disjoint">disjoint</string>
+    <string name="progress_indicator_color_animation_contiguous">contiguous</string>
+    <string name="progress_indicator_color_animation_advance">advance</string>
+    <string name="progress_indicator_color_animation_retreat">retreat</string>
+    <string name="progress_indicator_gap">アクティブインディケーターとトラックのマージン</string>
+    <string name="progress_indicator_wavy_size">波のサイズを指定</string>
+    <string name="progress_indicator_wavy_length">波の横幅を指定</string>
+    <string name="progress_indicator_wavy_height">波の縦幅を指定</string>
+    <string name="progress_direction">インジケーターの進行方向を逆にする</string>
+    <string name="progress_determine">確定インジケーター</string>
+    <string name="progress_determine_progress">+20%</string>
+    <string name="progress_determine_reset_progress">0%</string>
+    <string name="progress_determine_indeterminate">不確定化</string>
+    <string name="progress_visibility">表示非表示アニメーション</string>
+    <string name="progress_change">表示/非表示</string>
+    <string name="progress_inward">inward</string>
+    <string name="progress_outward">outward</string>
+    <string name="progress_speed">アニメーション速度</string>
+    <string name="progress_other">その他</string>
+    <string name="progress_button_push">PUSH</string>
+
+    <integer-array name="progress_indicator_colors">
+        <item>@color/pink_strong</item>
+        <item>@color/pink_normal</item>
+        <item>@color/pink_pale</item>
+    </integer-array>
+
 </resources>

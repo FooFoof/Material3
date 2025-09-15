@@ -13,6 +13,7 @@ import com.example.materialviewsxml.CheckboxActivity
 import com.example.materialviewsxml.ChipsActivity
 import com.example.materialviewsxml.MenuActivity
 import com.example.materialviewsxml.PickerActivity
+import com.example.materialviewsxml.ProgressIndicatorActivity
 import com.example.materialviewsxml.R
 import com.example.materialviewsxml.RadioButtonActivity
 import com.example.materialviewsxml.SearchActivity
@@ -72,6 +73,9 @@ class ComponentFragment() : Fragment() {
         }
         view.findViewById<Button>(R.id.button_search).setOnClickListener {
             startActivity(SearchActivity.intent(requireContext()))
+        }
+        view.findViewById<Button>(R.id.button_progress_indicator).setOnClickListener {
+            startActivity(ProgressIndicatorActivity.intent(requireContext()))
         }
     }
 

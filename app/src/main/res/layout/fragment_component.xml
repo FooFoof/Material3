@@ -102,6 +102,13 @@
             android:layout_marginTop="@dimen/space_16"
             android:text="Picker" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_progress_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_16"
+            android:text="Progress Indicator" />
+
     </LinearLayout>
 </ScrollView>
 
