@@ -51,38 +51,19 @@
                 android:layout_gravity="center"
                 android:orientation="horizontal">
 
-                <FrameLayout
-                    android:layout_width="0dp"
+                <Button
+                    style="?attr/materialIconButtonStyle"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minWidth="48dp"
-                    app:layout_overflowIcon="@drawable/run"
-                    app:layout_overflowText="@string/overflow_text_1">
+                    android:layout_gravity="center"
+                    app:icon="@drawable/run" />
 
-                    <Button
-                        style="?attr/materialIconButtonStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        app:icon="@drawable/run" />
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="0dp"
+                <Button
+                    style="?attr/materialIconButtonStyle"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minWidth="48dp"
-                    app:layout_overflowIcon="@drawable/key"
-                    app:layout_overflowText="@string/overflow_text_2">
-
-                    <Button
-                        style="?attr/materialIconButtonStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        app:icon="@drawable/key" />
-                </FrameLayout>
-
+                    android:layout_gravity="center"
+                    app:icon="@drawable/key" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/floating_action_button"
@@ -92,103 +73,19 @@
                     app:srcCompat="@drawable/heart_plus_fill"
                     tools:ignore="ContentDescription" />
 
-                <FrameLayout
-                    android:layout_width="0dp"
+                <Button
+                    style="?attr/materialIconButtonStyle"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minWidth="48dp"
-                    app:layout_overflowIcon="@drawable/star_fill"
-                    app:layout_overflowText="@string/overflow_text_3">
+                    android:layout_gravity="center"
+                    app:icon="@drawable/star_fill" />
 
-                    <Button
-                        style="?attr/materialIconButtonStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        app:icon="@drawable/star_fill" />
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="0dp"
+                <Button
+                    style="?attr/materialIconButtonStyle"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minWidth="48dp"
-                    app:layout_overflowIcon="@drawable/key"
-                    app:layout_overflowText="@string/overflow_text_4">
-
-                    <Button
-                        style="?attr/materialIconButtonStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        app:icon="@drawable/tab" />
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minWidth="48dp"
-                    app:layout_overflowIcon="@drawable/tab"
-                    app:layout_overflowText="@string/overflow_text_5">
-
-                    <Button
-                        style="?attr/materialIconButtonStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        app:icon="@drawable/tab" />
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minWidth="48dp"
-                    app:layout_overflowIcon="@drawable/run"
-                    app:layout_overflowText="@string/overflow_text_6">
-
-                    <Button
-                        style="?attr/materialIconButtonStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        app:icon="@drawable/star_fill" />
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minWidth="48dp"
-                    app:layout_overflowIcon="@drawable/key"
-                    app:layout_overflowText="@string/overflow_text_7">
-
-                    <Button
-                        style="?attr/materialIconButtonStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        app:icon="@drawable/key" />
-                </FrameLayout>
-
-                <!-- このボタンは、縦画面表示の時に非表示になる。-->
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minWidth="48dp"
-                    app:layout_overflowIcon="@drawable/key"
-                    app:layout_overflowText="コンテンツ">
-
-                    <Button
-                        style="?attr/materialIconButtonStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        app:icon="@drawable/key" />
-                </FrameLayout>
+                    android:layout_gravity="center"
+                    app:icon="@drawable/star_empty" />
 
             </com.google.android.material.overflow.OverflowLinearLayout>
 
