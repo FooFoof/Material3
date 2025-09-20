@@ -5,17 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/back"
+        app:title="@string/bottom_navigation_activity_title"
+        app:titleCentered="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navigation_rail"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
     <com.google.android.material.navigationrail.NavigationRailView
         android:id="@+id/navigation_rail"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:backgroundTint="@color/blue_gray"
         app:headerLayout="@layout/navigation_rail_header"
         app:activeIndicatorLabelPadding="5dp"
         app:submenuDividersEnabled="true"
         app:labelVisibilityMode="selected"
         app:menu="@menu/sample_menu"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

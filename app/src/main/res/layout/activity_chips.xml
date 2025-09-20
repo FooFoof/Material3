@@ -12,11 +12,13 @@
         android:layout_marginStart="@dimen/space_16"
         android:orientation="vertical">
 
-        <TextView
-            style="@style/text_page_title"
-            android:layout_width="wrap_content"
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/chips_activity_title" />
+            app:navigationIcon="@drawable/back"
+            app:title="@string/chips_activity_title"
+            app:titleCentered="true" />
 
         <!-- タッチエリアに合わせてチップの境界を拡張する場合。 -->
 

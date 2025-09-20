@@ -21,6 +21,7 @@ import androidx.annotation.MenuRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import com.google.android.material.textfield.TextInputLayout
@@ -36,6 +37,11 @@ class MenuActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         // メニューアイテムを設定する。
         val items = arrayOf("Item 1", "Item 2", "Item 3", "Item 4")
         (findViewById<TextInputLayout>(R.id.menu).editText as? MaterialAutoCompleteTextView)?.setSimpleItems(

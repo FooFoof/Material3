@@ -8,6 +8,14 @@
     android:background="@color/white"
     android:orientation="vertical">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/back"
+        app:title="@string/card_activity_title"
+        app:titleCentered="true" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -16,14 +24,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <TextView
-                style="@style/text_page_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/space_16"
-                android:text="@string/card_activity_title"
-                android:textColor="@color/guide_text" />
 
             <TextView
                 style="@style/text_section_title"

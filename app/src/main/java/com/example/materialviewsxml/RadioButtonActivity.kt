@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.appbar.MaterialToolbar
 
 class RadioButtonActivity: AppCompatActivity()  {
     override fun onCreate(savedInstanceState: android.os.Bundle?) {
@@ -17,6 +18,11 @@ class RadioButtonActivity: AppCompatActivity()  {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
     }
 
     companion object {

@@ -12,12 +12,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            style="@style/text_page_title"
-            android:layout_width="wrap_content"
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_field_activity_title"
-            android:textColor="@color/guide_text" />
+            app:navigationIcon="@drawable/back"
+            app:title="@string/text_field_activity_title"
+            app:titleCentered="true" />
 
         <TextView
             android:layout_width="wrap_content"

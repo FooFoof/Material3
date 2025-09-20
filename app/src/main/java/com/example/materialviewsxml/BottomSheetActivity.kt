@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.materialviewsxml.dialog.BottomSheet
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
@@ -23,6 +24,10 @@ class BottomSheetActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         val standardBottomSheet = findViewById<LinearLayout>(R.id.standard_bottom_sheet)
         val standardBottomSheetBehavior = BottomSheetBehavior.from(standardBottomSheet)
 

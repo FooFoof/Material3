@@ -6,15 +6,16 @@
     android:layout_height="wrap_content">
 <LinearLayout
     android:orientation="vertical"
-    android:layout_marginStart="@dimen/space_16"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <TextView
-        style="@style/text_page_title"
-        android:layout_width="wrap_content"
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/search_activity_title" />
+        app:navigationIcon="@drawable/back"
+        app:title="@string/search_activity_title"
+        app:titleCentered="true" />
 
     <com.google.android.material.search.SearchBar
         android:id="@+id/search_bar_action_bar"
@@ -26,6 +27,7 @@
         style="@style/text_section_title_small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_16"
         android:text="サーチviewを表示する"
         android:textAlignment="viewEnd" />
 
@@ -38,6 +40,7 @@
     <com.google.android.material.search.SearchView
         android:id="@+id/search_view"
         android:windowSoftInputMode="adjustNothing"
+
         android:hint="@string/search_bar_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -46,6 +49,7 @@
         style="@style/text_section_title_small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_16"
         android:text="メニューを表示する"
         android:textAlignment="viewEnd" />
 

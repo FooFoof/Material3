@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.materialviewsxml.adapter.CarouselRecyclerAdapter
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.carousel.CarouselLayoutManager
 import com.google.android.material.carousel.FullScreenCarouselStrategy
 import com.google.android.material.carousel.HeroCarouselStrategy
@@ -25,6 +26,11 @@ class CarouselActivity: AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         findViewById<RecyclerView>(R.id.recycler_multi).apply {
             layoutManager = CarouselLayoutManager()
             adapter = CarouselRecyclerAdapter()

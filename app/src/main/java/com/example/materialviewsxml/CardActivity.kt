@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.card.MaterialCardView
 
 
@@ -20,6 +21,11 @@ class CardActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         val checkedCard = findViewById<MaterialCardView>(R.id.card_check)
         checkedCard.setOnLongClickListener {
             checkedCard.isChecked = !checkedCard.isChecked

@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.search.SearchBar
 import com.google.android.material.search.SearchView
 
@@ -24,6 +25,11 @@ class SearchActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         // Actionbarとして設定する
         setSupportActionBar(findViewById<SearchBar>(R.id.search_bar_action_bar))
         // SearvhViewを表示する

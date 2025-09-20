@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.materialviewsxml.adapter.BottomSheetRecyclerAdapter
+import com.google.android.material.appbar.MaterialToolbar
 
 
 class ToolbarActivity : AppCompatActivity() {
@@ -22,6 +23,11 @@ class ToolbarActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         findViewById<RecyclerView>(R.id.recycler).apply {
             layoutManager = LinearLayoutManager(context)
             adapter = BottomSheetRecyclerAdapter()

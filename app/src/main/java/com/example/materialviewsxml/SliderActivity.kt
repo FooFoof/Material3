@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.slider.RangeSlider
 
 class SliderActivity: AppCompatActivity()  {
@@ -18,6 +19,11 @@ class SliderActivity: AppCompatActivity()  {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         findViewById<RangeSlider>(R.id.slider3).apply {
             values = arrayListOf(20f, 80f)
         }

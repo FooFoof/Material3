@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.checkbox.MaterialCheckBox
 
 class CheckboxActivity : AppCompatActivity() {
@@ -20,6 +21,10 @@ class CheckboxActivity : AppCompatActivity() {
                 v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
                 insets
             }
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
             findViewById<MaterialCheckBox>(R.id.checkbox_child_2).errorAccessibilityLabel = this.getString(R.string.checkbox_error_text)
 
 

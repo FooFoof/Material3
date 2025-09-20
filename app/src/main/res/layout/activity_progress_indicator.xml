@@ -10,12 +10,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            style="@style/text_page_title"
-            android:layout_width="wrap_content"
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/space_16"
-            android:text="@string/progress_indicator_activity_titile" />
+            app:navigationIcon="@drawable/back"
+            app:title="@string/progress_indicator_activity_titile"
+            app:titleCentered="true" />
 
         <!-- 波形 -->
 

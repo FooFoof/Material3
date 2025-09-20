@@ -26,6 +26,10 @@ class TopAppBarActivity : AppCompatActivity() {
             insets
         }
 
+        findViewById<MaterialToolbar>(R.id.toolbar_page).setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         findViewById<RecyclerView>(R.id.recycler).apply {
             layoutManager = LinearLayoutManager(context)
             adapter = BottomSheetRecyclerAdapter()

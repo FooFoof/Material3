@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.navigation.NavigationBarView
 
 
@@ -20,12 +21,17 @@ class BottomNavigationActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val badgeNum = findViewById<NavigationBarView>(R.id.bottom_navigation).getOrCreateBadge(R.id.item_2)
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+           onBackPressedDispatcher.onBackPressed()
+        }
+
+        val bottomNavigation = findViewById<NavigationBarView>(R.id.bottom_navigation)
+        val badgeNum = bottomNavigation.getOrCreateBadge(R.id.item_2)
         badgeNum.isVisible = true
         badgeNum.number = 99
-        val badge = findViewById<NavigationBarView>(R.id.bottom_navigation).getOrCreateBadge(R.id.item_1)
+        val badge = bottomNavigation.getOrCreateBadge(R.id.item_1)
         badge.isVisible = true
-        findViewById<NavigationBarView>(R.id.bottom_navigation).selectedItemId = R.id.item_2
+        bottomNavigation.selectedItemId = R.id.item_2
         NavigationBarView.OnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.item_1 -> {
@@ -42,16 +48,6 @@ class BottomNavigationActivity : AppCompatActivity() {
                 else -> false
             }
         }
-//        findViewById<NavigationBarView>(R.id.bottom_navigation_18).setOnItemReselectedListener { item ->
-//            when(item.itemId) {
-//                R.id.item_1 -> {
-//                    // Respond to navigation item 1 reselection
-//                }
-//                R.id.item_2 -> {
-//                    // Respond to navigation item 2 reselection
-//                }
-//            }
-//        }
     }
 
 

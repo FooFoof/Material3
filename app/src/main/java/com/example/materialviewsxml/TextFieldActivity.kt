@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import com.google.android.material.textfield.TextInputLayout
 
@@ -20,6 +21,11 @@ class TextFieldActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         findViewById<TextInputLayout>(R.id.filledTextField_error).error = "Error message"
         val items = arrayOf("Item 1", "Item 2", "Item 3", "Item 4")
         (findViewById<TextInputLayout>(R.id.drop).editText as? MaterialAutoCompleteTextView)?.setSimpleItems(items)
