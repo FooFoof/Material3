@@ -44,7 +44,7 @@ jobs:
         with:
           java-version: 17
       - name: UnitTest
-        run: ./gradlew testUnitTest
+        run: ./gradlew testDebugUnitTest
         
     
     
